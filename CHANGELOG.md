@@ -1,3 +1,12 @@
+## [1.0.0-alpha.2] - 2025-09-14
+
+### 📚 Documentation
+
+- *(readme)* Remove outdated WakaTime badge
+
+### ⚙️ Miscellaneous Tasks
+
+- *(scripts)* Add `inspector` script for debugging
 ## [1.0.0-alpha.1] - 2025-09-14
 
 ### 🐛 Bug Fixes
