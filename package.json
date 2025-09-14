@@ -10,6 +10,7 @@
     "lint": "biome lint",
     "lint:fix": "biome lint --fix",
     "start": "wrangler dev",
+    "test": "vitest --run",
     "cf-typegen": "wrangler types --include-runtime=false --strict-vars=false --env-interface CloudflareEnv ./cloudflare-env.d.ts",
     "type-check": "tsc --noEmit"
   },
