@@ -1,56 +1,48 @@
-# =====================================================================
-# TEMPLATE CLEANUP WORKFLOW
-# =====================================================================
-name: Template Cleanup
+name: Template Cleanup # Clean up template artifacts after bootstrap.
 
-# ---------------------------------------------------------------------
-# WORKFLOW TRIGGERS
-# ---------------------------------------------------------------------
 on:
-  push:
-    branches: [master] # Run on push to master branch
+  push: # Run on pushes to the default branch.
+    branches: [master]
 
-# ---------------------------------------------------------------------
-# JOBS
-# ---------------------------------------------------------------------
 jobs:
   cleanup:
     name: Cleanup Template Files
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # Use the latest Ubuntu runner.
     permissions:
-      contents: write
-    # Run only if not the template repository
-    if: github.repository != 'nekofar/remote-mcp-template'
-    timeout-minutes: 10
+      contents: write # Allow committing changes back to the repo.
+    if: github.repository != 'nekofar/remote-mcp-template' # Skip in the template repo itself.
+    timeout-minutes: 10 # Prevents long‑running jobs from hanging.
 
     steps:
-      # CHECKOUT
-      - name: Checkout repository code
-        uses: actions/checkout@v5.0.0
+      # The first step is to check out the repository code
+      - name: Checking out repository code
+        uses: actions/checkout@v5.0.0 # Action for checking out a repo.
 
-      # SETUP ENVIRONMENT
+      # Setup Foundry (kept for template parity)
       - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@v1.4.0
+        uses: foundry-rs/foundry-toolchain@v1.4.0 # Install Foundry toolchain.
         with:
           version: nightly
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4.1.0
+      # Install pnpm package manager
+      - name: Install pnpm package manager
+        uses: pnpm/action-setup@v4.1.0 # Action for setting up pnpm.
         with:
           run_install: false
 
-      - name: Install Node.js
-        uses: actions/setup-node@v5
+      # Setup Node.js environment
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v5.0.0 # Action for setting up Node environment.
         with:
-          cache: "pnpm"
-          node-version-file: "package.json"
+          cache: 'pnpm'
+          node-version-file: 'package.json'
 
-      # DEPENDENCIES
-      - name: Install dependencies
-        run: pnpm install
+      # Install dependencies
+      - name: Install dependencies using pnpm
+        run: pnpm install # Installs project dependencies.
 
-      # CLEANUP
-      - name: Clean up the repository
+      # Update names and remove template files
+      - name: Clean up the repository files
         run: |
           # Set project name and version
           NAME="$(basename $GITHUB_REPOSITORY)"
@@ -60,14 +52,15 @@ jobs:
           pnpm dlx json -I -f package.json -e "this.name='${NAME}'"
           pnpm dlx json -I -f package.json -e "this.version='${VERSION}'"
 
-          # Update wrangler.jsonc
+          # Update wrangler.jsonc if present
           if [ -f wrangler.jsonc ]; then
             pnpm dlx json -I -f wrangler.jsonc -e "this.name='${NAME}'"
           fi
 
+          # Reinstall to update lockfile
           pnpm install --no-frozen-lockfile
 
-          # Remove template files
+          # Remove template files no longer needed
           rm -rf \
             .github/ISSUE_TEMPLATE \
             .github/workflows/template.yml \
@@ -77,7 +70,7 @@ jobs:
             CHANGELOG.md \
             README.md
 
-      # COMMIT & PUSH
+      # Commit and push the changes
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
@@ -86,7 +79,8 @@ jobs:
           git commit -m 'chore: initial template cleanup'
 
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@master # Push changes back to the branch.
         with:
           branch: master
           github_token: ${{ secrets.GITHUB_TOKEN }}
+
