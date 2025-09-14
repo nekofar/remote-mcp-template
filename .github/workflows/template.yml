@@ -1,0 +1,92 @@
+# =====================================================================
+# TEMPLATE CLEANUP WORKFLOW
+# =====================================================================
+name: Template Cleanup
+
+# ---------------------------------------------------------------------
+# WORKFLOW TRIGGERS
+# ---------------------------------------------------------------------
+on:
+  push:
+    branches: [master] # Run on push to master branch
+
+# ---------------------------------------------------------------------
+# JOBS
+# ---------------------------------------------------------------------
+jobs:
+  cleanup:
+    name: Cleanup Template Files
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    # Run only if not the template repository
+    if: github.repository != 'nekofar/remote-mcp-template'
+    timeout-minutes: 10
+
+    steps:
+      # CHECKOUT
+      - name: Checkout repository code
+        uses: actions/checkout@v5.0.0
+
+      # SETUP ENVIRONMENT
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1.4.0
+        with:
+          version: nightly
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4.1.0
+        with:
+          run_install: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@v5
+        with:
+          cache: "pnpm"
+          node-version-file: "package.json"
+
+      # DEPENDENCIES
+      - name: Install dependencies
+        run: pnpm install
+
+      # CLEANUP
+      - name: Clean up the repository
+        run: |
+          # Set project name and version
+          NAME="$(basename $GITHUB_REPOSITORY)"
+          VERSION='1.0.0-alpha.0'
+
+          # Update package.json
+          pnpm dlx json -I -f package.json -e "this.name='${NAME}'"
+          pnpm dlx json -I -f package.json -e "this.version='${VERSION}'"
+
+          # Update wrangler.jsonc
+          if [ -f wrangler.jsonc ]; then
+            pnpm dlx json -I -f wrangler.jsonc -e "this.name='${NAME}'"
+          fi
+
+          pnpm install --no-frozen-lockfile
+
+          # Remove template files
+          rm -rf \
+            .github/ISSUE_TEMPLATE \
+            .github/workflows/template.yml \
+            .github/dependabot.yml \
+            .github/FUNDING.yml \
+            .github/stale.yml \
+            CHANGELOG.md \
+            README.md
+
+      # COMMIT & PUSH
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m 'chore: initial template cleanup'
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
