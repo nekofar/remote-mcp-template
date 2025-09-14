@@ -1,0 +1,86 @@
+name: Template Cleanup # Clean up template artifacts after bootstrap.
+
+on:
+  push: # Run on pushes to the default branch.
+    branches: [master]
+
+jobs:
+  cleanup:
+    name: Cleanup Template Files
+    runs-on: ubuntu-latest # Use the latest Ubuntu runner.
+    permissions:
+      contents: write # Allow committing changes back to the repo.
+    if: github.repository != 'nekofar/remote-mcp-template' # Skip in the template repo itself.
+    timeout-minutes: 10 # Prevents long‑running jobs from hanging.
+
+    steps:
+      # The first step is to check out the repository code
+      - name: Checking out repository code
+        uses: actions/checkout@v5.0.0 # Action for checking out a repo.
+
+      # Setup Foundry (kept for template parity)
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1.4.0 # Install Foundry toolchain.
+        with:
+          version: nightly
+
+      # Install pnpm package manager
+      - name: Install pnpm package manager
+        uses: pnpm/action-setup@v4.1.0 # Action for setting up pnpm.
+        with:
+          run_install: false
+
+      # Setup Node.js environment
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v5.0.0 # Action for setting up Node environment.
+        with:
+          cache: 'pnpm'
+          node-version-file: 'package.json'
+
+      # Install dependencies
+      - name: Install dependencies using pnpm
+        run: pnpm install # Installs project dependencies.
+
+      # Update names and remove template files
+      - name: Clean up the repository files
+        run: |
+          # Set project name and version
+          NAME="$(basename $GITHUB_REPOSITORY)"
+          VERSION='1.0.0-alpha.0'
+
+          # Update package.json
+          pnpm dlx json -I -f package.json -e "this.name='${NAME}'"
+          pnpm dlx json -I -f package.json -e "this.version='${VERSION}'"
+
+          # Update wrangler.jsonc if present
+          if [ -f wrangler.jsonc ]; then
+            pnpm dlx json -I -f wrangler.jsonc -e "this.name='${NAME}'"
+          fi
+
+          # Reinstall to update lockfile
+          pnpm install --no-frozen-lockfile
+
+          # Remove template files no longer needed
+          rm -rf \
+            .github/ISSUE_TEMPLATE \
+            .github/workflows/template.yml \
+            .github/dependabot.yml \
+            .github/FUNDING.yml \
+            .github/stale.yml \
+            CHANGELOG.md \
+            README.md
+
+      # Commit and push the changes
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m 'chore: initial template cleanup'
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master # Push changes back to the branch.
+        with:
+          branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+

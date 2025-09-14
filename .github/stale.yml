@@ -1,0 +1,22 @@
+# Days of inactivity before marking an issue stale.
+daysUntilStale: 60
+
+# Days of inactivity before closing a stale issue.
+daysUntilClose: 7
+
+# Labels that exempt issues from being marked stale.
+exemptLabels:
+  - pinned
+  - security
+
+# Label applied when an issue is marked stale.
+staleLabel: stale
+
+# Comment posted when marking an issue as stale. Set to false to disable.
+markComment: >
+  This issue has been automatically marked as stale due to inactivity.
+  It will be closed if no further activity occurs. Thank you for your
+  contributions.
+
+# Comment posted when closing a stale issue. Set to false to disable.
+closeComment: false
