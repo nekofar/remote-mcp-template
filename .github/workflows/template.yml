@@ -54,7 +54,7 @@ jobs:
 
           # Update wrangler.jsonc if present
           if [ -f wrangler.jsonc ]; then
-            pnpm dlx json -I -f wrangler.jsonc -e "this.name='${NAME}'"
+            sed -i -E '0,/"name"[[:space:]]*:[[:space:]]*"[^"]*"/s//"name": "'"$NAME"'"/' wrangler.jsonc
           fi
 
           # Reinstall to update lockfile
