@@ -6,6 +6,7 @@
   "scripts": {
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
+    "build": "wrangler deploy --dry-run",
     "format": "biome format --write",
     "lint": "biome lint",
     "lint:fix": "biome lint --fix",
