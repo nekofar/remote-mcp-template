@@ -53,3 +53,9 @@ updates:
       - 'nekofar'
     # Raise pull requests against the `develop` branch
     target-branch: 'develop'
+    # Ignore wrangler major and minor updates (allow patches)
+    ignore:
+      - dependency-name: 'wrangler'
+        update-types:
+          - 'version-update:semver-major'
+          - 'version-update:semver-minor'
