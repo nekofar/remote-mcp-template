@@ -1,3 +1,12 @@
+## [1.0.0-alpha.1] - 2025-09-14
+
+### 🐛 Bug Fixes
+
+- *(vitest)* Allow tests to pass with no tests defined
+
+### ⚙️ Miscellaneous Tasks
+
+- *(codeowners)* Add default code owner
 ## [1.0.0-alpha.0] - 2025-09-14
 
 ### 🚀 Features
