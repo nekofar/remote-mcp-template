@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.4",
+    "@modelcontextprotocol/inspector": "0.16.7",
     "wrangler": "4.36.0"
   }
 }
