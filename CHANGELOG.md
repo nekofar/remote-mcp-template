@@ -1,3 +1,8 @@
+## [1.0.0-alpha.3] - 2025-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- *(templates)* Improve `sed` pattern for `wrangler.jsonc` updates
 ## [1.0.0-alpha.2] - 2025-09-14
 
 ### 📚 Documentation
