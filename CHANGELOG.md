@@ -1,3 +1,13 @@
+## [1.0.0-alpha.4] - 2025-10-03
+
+### 🚜 Refactor
+
+- *(core)* Update method for tool registration
+
+### ⚙️ Miscellaneous Tasks
+
+- *(config)* Add `bracketSpacing` to formatter settings
+- *(config)* Add `includes` to file settings
 ## [1.0.0-alpha.3] - 2025-09-14
 
 ### ⚙️ Miscellaneous Tasks
