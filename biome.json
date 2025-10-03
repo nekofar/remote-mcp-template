@@ -6,6 +6,7 @@
     "useIgnoreFile": false
   },
   "files": {
+    "includes": ["src/**/*.{js,json,ts,tsx}"],
     "ignoreUnknown": false
   },
   "formatter": {
@@ -20,7 +21,13 @@
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "double"
+      "quoteStyle": "double",
+      "bracketSpacing": true
+    }
+  },
+  "json": {
+    "formatter": {
+      "bracketSpacing": true
     }
   },
   "assist": {

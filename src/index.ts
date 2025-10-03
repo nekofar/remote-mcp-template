@@ -18,10 +18,12 @@ export class MyMCP extends McpAgent<Bindings> {
   async init() {
     // Register tools at startup so misconfigurations fail fast.
     // Minimal smoke‑test tool; extend/replace with real capabilities.
-    this.server.tool(
+    this.server.registerTool(
       "hello",
-      "Returns a hello world message.",
-      {},
+      {
+        title: "Hello",
+        description: "Returns a hello world message.",
+      },
       async () => ({ content: [{ type: "text", text: "Hello world!" }] }),
     );
   }
