@@ -38,7 +38,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
     "@cloudflare/vitest-pool-workers": "0.9.10",
-    "@cloudflare/workers-types": "4.20251001.0",
+    "@cloudflare/workers-types": "4.20251003.0",
     "@modelcontextprotocol/inspector": "0.17.0",
     "@types/node": "24.6.2",
     "ts-node": "10.9.2",
