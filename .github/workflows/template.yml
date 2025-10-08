@@ -20,7 +20,7 @@ jobs:
 
       # Setup Foundry (kept for template parity)
       - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@v1.4.0 # Install Foundry toolchain.
+        uses: foundry-rs/foundry-toolchain@v1.5.0 # Install Foundry toolchain.
         with:
           version: nightly
 
