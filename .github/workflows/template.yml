@@ -20,13 +20,13 @@ jobs:
 
       # Setup Foundry (kept for template parity)
       - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@v1.4.0 # Install Foundry toolchain.
+        uses: foundry-rs/foundry-toolchain@v1.5.0 # Install Foundry toolchain.
         with:
           version: nightly
 
       # Install pnpm package manager
       - name: Install pnpm package manager
-        uses: pnpm/action-setup@v4.1.0 # Action for setting up pnpm.
+        uses: pnpm/action-setup@v4.2.0 # Action for setting up pnpm.
         with:
           run_install: false
 
