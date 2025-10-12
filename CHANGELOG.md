@@ -1,3 +1,8 @@
+## [1.0.0-alpha.5] - 2025-10-12
+
+### ⚙️ Miscellaneous Tasks
+
+- *(changelog)* Skip CI deps in git-cliff
 ## [1.0.0-alpha.4] - 2025-10-03
 
 ### 🚜 Refactor
