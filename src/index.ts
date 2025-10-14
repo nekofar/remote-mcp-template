@@ -1,7 +1,7 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { McpAgent } from "agents/mcp";
 import { Hono } from "hono";
-import { z } from "zod";
+import { z } from "zod/v3";
 import pkg from "../package.json" with { type: "json" };
 
 // Explicit env typing keeps Worker bindings checked and refactor‑friendly.
