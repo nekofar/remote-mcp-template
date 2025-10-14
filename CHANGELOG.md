@@ -1,3 +1,16 @@
+## [1.0.0-alpha.7] - 2025-10-14
+
+### 🚀 Features
+
+- Add greeting toolkit for sample server (#63)
+
+### 📚 Documentation
+
+- *(readme)* Update project description and usage details
+
+### ⚙️ Miscellaneous Tasks
+
+- *(package)* Update `inspector` script with new flags
 ## [1.0.0-alpha.6] - 2025-10-14
 
 ### 🐛 Bug Fixes
