@@ -1,3 +1,8 @@
+## [1.0.0-alpha.8] - 2025-10-14
+
+### 📚 Documentation
+
+- *(repo)* Update contributor guide
 ## [1.0.0-alpha.7] - 2025-10-14
 
 ### 🚀 Features
