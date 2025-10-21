@@ -1,3 +1,8 @@
+## [1.0.0-alpha.10] - 2025-10-21
+
+### ⚙️ Miscellaneous Tasks
+
+- *(github)* Remove foundry setup
 ## [1.0.0-alpha.9] - 2025-10-21
 
 ### 🚜 Refactor
