@@ -18,12 +18,6 @@ jobs:
       - name: Checking out repository code
         uses: actions/checkout@v5.0.0 # Action for checking out a repo.
 
-      # Setup Foundry (kept for template parity)
-      - name: Install Foundry
-        uses: foundry-rs/foundry-toolchain@v1.5.0 # Install Foundry toolchain.
-        with:
-          version: nightly
-
       # Install pnpm package manager
       - name: Install pnpm package manager
         uses: pnpm/action-setup@v4.2.0 # Action for setting up pnpm.
