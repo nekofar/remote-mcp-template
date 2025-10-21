@@ -34,7 +34,7 @@ export class MyMCP extends McpAgent<Bindings> {
         return {
           content: [
             {
-              type: "text",
+              type: "text" as const,
               text: `Hello, ${name}!`,
             },
           ],
@@ -86,9 +86,9 @@ export class MyMCP extends McpAgent<Bindings> {
         return {
           messages: [
             {
-              role: "user",
+              role: "user" as const,
               content: {
-                type: "text",
+                type: "text" as const,
                 text: `Please greet ${username} using the 'greet' tool, and then show the data from the 'hello://greeting' resource to provide additional context about our greeting service.`,
               },
             },
