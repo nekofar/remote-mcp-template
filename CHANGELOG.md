@@ -1,3 +1,8 @@
+## [1.0.0-alpha.9] - 2025-10-21
+
+### 🚜 Refactor
+
+- *(src)* Use `as const` for type literals
 ## [1.0.0-alpha.8] - 2025-10-14
 
 ### 📚 Documentation
