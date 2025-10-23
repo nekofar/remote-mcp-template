@@ -36,7 +36,7 @@
     "zod": "4.1.12"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.6",
+    "@biomejs/biome": "2.2.7",
     "@cloudflare/vitest-pool-workers": "0.9.14",
     "@cloudflare/workers-types": "4.20251014.0",
     "@modelcontextprotocol/inspector": "0.17.1",
