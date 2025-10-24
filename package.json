@@ -1,6 +1,6 @@
 {
   "name": "remote-mcp-template",
-  "version": "1.0.0-alpha.10",
+  "version": "1.0.0-alpha.11",
   "description": "Template for a Model Context Protocol (MCP) server.",
   "type": "module",
   "scripts": {
@@ -32,15 +32,15 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.20.1",
     "agents": "0.2.14",
-    "hono": "4.10.1",
+    "hono": "4.10.2",
     "zod": "4.1.12"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.2.6",
-    "@cloudflare/vitest-pool-workers": "0.9.13",
-    "@cloudflare/workers-types": "4.20251011.0",
-    "@modelcontextprotocol/inspector": "0.17.1",
-    "@types/node": "24.8.1",
+    "@biomejs/biome": "2.2.7",
+    "@cloudflare/vitest-pool-workers": "0.10.0",
+    "@cloudflare/workers-types": "4.20251014.0",
+    "@modelcontextprotocol/inspector": "0.17.2",
+    "@types/node": "24.9.1",
     "ts-node": "10.9.2",
     "typescript": "5.9.3",
     "vitest": "3.2.4",
