@@ -28,7 +28,7 @@
   "engines": {
     "node": ">=20.6.0"
   },
-  "packageManager": "pnpm@10.18.0",
+  "packageManager": "pnpm@10.20.0",
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.20.2",
     "agents": "0.2.20",
