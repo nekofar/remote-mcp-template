@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@modelcontextprotocol/sdk':
-        specifier: 1.20.1
-        version: 1.20.1
+        specifier: 1.20.2
+        version: 1.20.2
       agents:
         specifier: 0.2.20
         version: 0.2.20(@cloudflare/workers-types@4.20251014.0)(react@19.1.1)(typescript@5.9.3)(viem@2.38.1(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12))(x402@0.6.5(@solana/sysvars@3.0.3(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.9.3))(@tanstack/query-core@5.90.2)(@tanstack/react-query@5.90.2(react@19.1.1))(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(react@19.1.1)(typescript@5.9.3)(utf-8-validate@5.0.10)(ws@8.18.3(bufferutil@4.0.9)(utf-8-validate@5.0.10)))
@@ -668,10 +668,6 @@ packages:
     resolution: {integrity: sha512-ADWwZtbvecKCbLCR7L0Uaa2mPKFDJcTrc9xcE9pdN8gL/jFfzOMrgdNsKt+qBknzMeSQ6mJT+UguJbnQs8n13Q==}
     engines: {node: '>=22.7.5'}
     hasBin: true
-
-  '@modelcontextprotocol/sdk@1.20.1':
-    resolution: {integrity: sha512-j/P+yuxXfgxb+mW7OEoRCM3G47zCTDqUPivJo/VzpjbG8I9csTXtOprCf5FfOfHK4whOJny0aHuBEON+kS7CCA==}
-    engines: {node: '>=18'}
 
   '@modelcontextprotocol/sdk@1.20.2':
     resolution: {integrity: sha512-6rqTdFt67AAAzln3NOKsXRmv5ZzPkgbfaebKBqUbts7vK1GZudqnrun5a8d3M/h955cam9RHZ6Jb4Y1XhnmFPg==}
@@ -4923,7 +4919,7 @@ snapshots:
 
   '@modelcontextprotocol/inspector-cli@0.17.2':
     dependencies:
-      '@modelcontextprotocol/sdk': 1.20.1
+      '@modelcontextprotocol/sdk': 1.20.2
       commander: 13.1.0
       spawn-rx: 5.1.2
     transitivePeerDependencies:
@@ -4931,7 +4927,7 @@ snapshots:
 
   '@modelcontextprotocol/inspector-client@0.17.2':
     dependencies:
-      '@modelcontextprotocol/sdk': 1.20.1
+      '@modelcontextprotocol/sdk': 1.20.2
       '@radix-ui/react-checkbox': 1.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-dialog': 1.1.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-icons': 1.3.2(react@18.3.1)
@@ -4963,7 +4959,7 @@ snapshots:
 
   '@modelcontextprotocol/inspector-server@0.17.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)':
     dependencies:
-      '@modelcontextprotocol/sdk': 1.20.1
+      '@modelcontextprotocol/sdk': 1.20.2
       cors: 2.8.5
       express: 5.1.0
       shell-quote: 1.8.3
@@ -4980,7 +4976,7 @@ snapshots:
       '@modelcontextprotocol/inspector-cli': 0.17.2
       '@modelcontextprotocol/inspector-client': 0.17.2
       '@modelcontextprotocol/inspector-server': 0.17.2(bufferutil@4.0.9)(utf-8-validate@5.0.10)
-      '@modelcontextprotocol/sdk': 1.20.1
+      '@modelcontextprotocol/sdk': 1.20.2
       concurrently: 9.2.1
       node-fetch: 3.3.2
       open: 10.2.0
@@ -4998,23 +4994,6 @@ snapshots:
       - supports-color
       - typescript
       - utf-8-validate
-
-  '@modelcontextprotocol/sdk@1.20.1':
-    dependencies:
-      ajv: 6.12.6
-      content-type: 1.0.5
-      cors: 2.8.5
-      cross-spawn: 7.0.6
-      eventsource: 3.0.7
-      eventsource-parser: 3.0.6
-      express: 5.1.0
-      express-rate-limit: 7.5.1(express@5.1.0)
-      pkce-challenge: 5.0.0
-      raw-body: 3.0.1
-      zod: 3.25.76
-      zod-to-json-schema: 3.24.6(zod@3.25.76)
-    transitivePeerDependencies:
-      - supports-color
 
   '@modelcontextprotocol/sdk@1.20.2':
     dependencies:
