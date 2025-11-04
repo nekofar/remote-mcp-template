@@ -1,3 +1,8 @@
+## [1.0.0-alpha.13] - 2025-11-04
+
+### ⚙️ Miscellaneous Tasks
+
+- *(config)* Update biome schema
 ## [1.0.0-alpha.12] - 2025-11-03
 
 ### 🐛 Bug Fixes
