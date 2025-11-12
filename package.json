@@ -32,7 +32,7 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.21.1",
     "agents": "0.2.21",
-    "hono": "4.10.4",
+    "hono": "4.10.5",
     "zod": "4.1.12"
   },
   "devDependencies": {
