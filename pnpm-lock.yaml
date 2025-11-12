@@ -26,25 +26,25 @@ importers:
         version: 2.3.5
       '@cloudflare/vitest-pool-workers':
         specifier: 0.10.3
-        version: 0.10.3(@cloudflare/workers-types@4.20251111.0)(@vitest/runner@4.0.8)(@vitest/snapshot@4.0.8)(bufferutil@4.0.9)(utf-8-validate@5.0.10)(vitest@4.0.8(@types/debug@4.1.12)(@types/node@24.10.0))
+        version: 0.10.3(@cloudflare/workers-types@4.20251111.0)(@vitest/runner@4.0.8)(@vitest/snapshot@4.0.8)(bufferutil@4.0.9)(utf-8-validate@5.0.10)(vitest@4.0.8(@types/debug@4.1.12)(@types/node@24.10.1))
       '@cloudflare/workers-types':
         specifier: 4.20251111.0
         version: 4.20251111.0
       '@modelcontextprotocol/inspector':
         specifier: 0.17.2
-        version: 0.17.2(@types/node@24.10.0)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
+        version: 0.17.2(@types/node@24.10.1)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
       '@types/node':
-        specifier: 24.10.0
-        version: 24.10.0
+        specifier: 24.10.1
+        version: 24.10.1
       ts-node:
         specifier: 10.9.2
-        version: 10.9.2(@types/node@24.10.0)(typescript@5.9.3)
+        version: 10.9.2(@types/node@24.10.1)(typescript@5.9.3)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
       vitest:
         specifier: 4.0.8
-        version: 4.0.8(@types/debug@4.1.12)(@types/node@24.10.0)
+        version: 4.0.8(@types/debug@4.1.12)(@types/node@24.10.1)
       wrangler:
         specifier: 4.16.1
         version: 4.16.1(@cloudflare/workers-types@4.20251111.0)(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -1994,8 +1994,8 @@ packages:
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
 
-  '@types/node@24.10.0':
-    resolution: {integrity: sha512-qzQZRBqkFsYyaSWXuEHc2WR9c0a0CXwiE5FWUvn7ZM+vdy1uZLfCunD38UzhuB7YN/J11ndbDBcTmOdxJo9Q7A==}
+  '@types/node@24.10.1':
+    resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
 
   '@types/trusted-types@2.0.7':
     resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
@@ -4568,7 +4568,7 @@ snapshots:
     optionalDependencies:
       workerd: 1.20251011.0
 
-  '@cloudflare/vitest-pool-workers@0.10.3(@cloudflare/workers-types@4.20251111.0)(@vitest/runner@4.0.8)(@vitest/snapshot@4.0.8)(bufferutil@4.0.9)(utf-8-validate@5.0.10)(vitest@4.0.8(@types/debug@4.1.12)(@types/node@24.10.0))':
+  '@cloudflare/vitest-pool-workers@0.10.3(@cloudflare/workers-types@4.20251111.0)(@vitest/runner@4.0.8)(@vitest/snapshot@4.0.8)(bufferutil@4.0.9)(utf-8-validate@5.0.10)(vitest@4.0.8(@types/debug@4.1.12)(@types/node@24.10.1))':
     dependencies:
       '@vitest/runner': 4.0.8
       '@vitest/snapshot': 4.0.8
@@ -4577,7 +4577,7 @@ snapshots:
       devalue: 5.4.2
       miniflare: 4.20251011.1(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       semver: 7.7.3
-      vitest: 4.0.8(@types/debug@4.1.12)(@types/node@24.10.0)
+      vitest: 4.0.8(@types/debug@4.1.12)(@types/node@24.10.1)
       wrangler: 4.45.3(@cloudflare/workers-types@4.20251111.0)(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       zod: 3.25.76
     transitivePeerDependencies:
@@ -5252,7 +5252,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@modelcontextprotocol/inspector@0.17.2(@types/node@24.10.0)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)':
+  '@modelcontextprotocol/inspector@0.17.2(@types/node@24.10.1)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@modelcontextprotocol/inspector-cli': 0.17.2
       '@modelcontextprotocol/inspector-client': 0.17.2
@@ -5263,7 +5263,7 @@ snapshots:
       open: 10.2.0
       shell-quote: 1.8.3
       spawn-rx: 5.1.2
-      ts-node: 10.9.2(@types/node@24.10.0)(typescript@5.9.3)
+      ts-node: 10.9.2(@types/node@24.10.1)(typescript@5.9.3)
       zod: 3.25.76
     transitivePeerDependencies:
       - '@cfworker/json-schema'
@@ -6949,7 +6949,7 @@ snapshots:
 
   '@types/connect@3.4.38':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
     optional: true
 
   '@types/debug@4.1.12':
@@ -6971,7 +6971,7 @@ snapshots:
   '@types/node@12.20.55':
     optional: true
 
-  '@types/node@24.10.0':
+  '@types/node@24.10.1':
     dependencies:
       undici-types: 7.16.0
 
@@ -6983,12 +6983,12 @@ snapshots:
 
   '@types/ws@7.4.7':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
     optional: true
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
     optional: true
 
   '@vercel/oidc@3.0.3': {}
@@ -7002,13 +7002,13 @@ snapshots:
       chai: 6.2.0
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.8(vite@7.2.2(@types/node@24.10.0))':
+  '@vitest/mocker@4.0.8(vite@7.2.2(@types/node@24.10.1))':
     dependencies:
       '@vitest/spy': 4.0.8
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.2.2(@types/node@24.10.0)
+      vite: 7.2.2(@types/node@24.10.1)
 
   '@vitest/pretty-format@4.0.8':
     dependencies:
@@ -9718,14 +9718,14 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  ts-node@10.9.2(@types/node@24.10.0)(typescript@5.9.3):
+  ts-node@10.9.2(@types/node@24.10.1)(typescript@5.9.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
       acorn: 8.14.0
       acorn-walk: 8.3.2
       arg: 4.1.3
@@ -9939,7 +9939,7 @@ snapshots:
       - zod
     optional: true
 
-  vite@7.2.2(@types/node@24.10.0):
+  vite@7.2.2(@types/node@24.10.1):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -9948,13 +9948,13 @@ snapshots:
       rollup: 4.53.2
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
       fsevents: 2.3.3
 
-  vitest@4.0.8(@types/debug@4.1.12)(@types/node@24.10.0):
+  vitest@4.0.8(@types/debug@4.1.12)(@types/node@24.10.1):
     dependencies:
       '@vitest/expect': 4.0.8
-      '@vitest/mocker': 4.0.8(vite@7.2.2(@types/node@24.10.0))
+      '@vitest/mocker': 4.0.8(vite@7.2.2(@types/node@24.10.1))
       '@vitest/pretty-format': 4.0.8
       '@vitest/runner': 4.0.8
       '@vitest/snapshot': 4.0.8
@@ -9971,11 +9971,11 @@ snapshots:
       tinyexec: 0.3.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.2.2(@types/node@24.10.0)
+      vite: 7.2.2(@types/node@24.10.1)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/debug': 4.1.12
-      '@types/node': 24.10.0
+      '@types/node': 24.10.1
     transitivePeerDependencies:
       - jiti
       - less
