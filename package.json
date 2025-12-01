@@ -30,7 +30,7 @@
   },
   "packageManager": "pnpm@10.20.0",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.21.1",
+    "@modelcontextprotocol/sdk": "1.23.0",
     "agents": "0.2.21",
     "hono": "4.10.5",
     "zod": "4.1.13"
