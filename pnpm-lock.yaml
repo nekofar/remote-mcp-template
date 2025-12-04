@@ -12,8 +12,8 @@ importers:
         specifier: 1.24.2
         version: 1.24.2(@cfworker/json-schema@4.1.1)(zod@4.1.13)
       agents:
-        specifier: 0.2.26
-        version: 0.2.26(@cloudflare/workers-types@4.20251202.0)(react@19.1.1)(typescript@5.9.3)(viem@2.38.1(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.13))
+        specifier: 0.2.29
+        version: 0.2.29(@cloudflare/workers-types@4.20251202.0)(react@19.1.1)(typescript@5.9.3)(viem@2.38.1(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.13))
       hono:
         specifier: 4.10.7
         version: 4.10.7
@@ -1341,8 +1341,8 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  agents@0.2.26:
-    resolution: {integrity: sha512-0LXdFyArhCWrisCtJI4PmF6TrekuybuxMwSNCRx3T+Dl7Emxmpy24hFofJn3msYp38mBwUnGVq076ckMNRlteg==}
+  agents@0.2.29:
+    resolution: {integrity: sha512-+0oCGDwCvTL6Q8m1GiFFPOuzspvurCqECTzgB8QVgk1wucUJPB9L2J7s8YtZRgTJ6tsSI4OlRL6QQbXE6ag/mQ==}
     hasBin: true
     peerDependencies:
       react: '*'
@@ -2063,8 +2063,8 @@ packages:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
-  prettier@3.7.3:
-    resolution: {integrity: sha512-QgODejq9K3OzoBbuyobZlUhznP5SKwPqp+6Q6xw6o8gnhr4O85L2U915iM2IDcfF2NPXVaM9zlo9tdwipnYwzg==}
+  prettier@3.7.4:
+    resolution: {integrity: sha512-v6UNi1+3hSlVvv8fSaoUbggEM5VErKmmpGA7Pl3HF8V6uKY7rvClBOJlH6yNwQtfTueNkGVpOv/mtWL9L4bgRA==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -3658,7 +3658,7 @@ snapshots:
 
   acorn@8.14.0: {}
 
-  agents@0.2.26(@cloudflare/workers-types@4.20251202.0)(react@19.1.1)(typescript@5.9.3)(viem@2.38.1(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.13)):
+  agents@0.2.29(@cloudflare/workers-types@4.20251202.0)(react@19.1.1)(typescript@5.9.3)(viem@2.38.1(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.13)):
     dependencies:
       '@ai-sdk/openai': 2.0.73(zod@3.25.76)
       '@cfworker/json-schema': 4.1.1
@@ -4199,7 +4199,7 @@ snapshots:
       js-yaml: 4.1.1
       lodash: 4.17.21
       minimist: 1.2.8
-      prettier: 3.7.3
+      prettier: 3.7.4
       tinyglobby: 0.2.15
 
   json-schema-traverse@0.4.1: {}
@@ -4398,7 +4398,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  prettier@3.7.3: {}
+  prettier@3.7.4: {}
 
   printable-characters@1.0.42: {}
 
