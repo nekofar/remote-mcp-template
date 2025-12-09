@@ -26,25 +26,25 @@ importers:
         version: 2.3.8
       '@cloudflare/vitest-pool-workers':
         specifier: 0.10.3
-        version: 0.10.3(@cloudflare/workers-types@4.20251205.0)(@vitest/runner@4.0.15)(@vitest/snapshot@4.0.15)(bufferutil@4.0.9)(utf-8-validate@5.0.10)(vitest@4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.1))
+        version: 0.10.3(@cloudflare/workers-types@4.20251205.0)(@vitest/runner@4.0.15)(@vitest/snapshot@4.0.15)(bufferutil@4.0.9)(utf-8-validate@5.0.10)(vitest@4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.2))
       '@cloudflare/workers-types':
         specifier: 4.20251205.0
         version: 4.20251205.0
       '@modelcontextprotocol/inspector':
         specifier: 0.17.5
-        version: 0.17.5(@cfworker/json-schema@4.1.1)(@types/node@24.10.1)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
+        version: 0.17.5(@cfworker/json-schema@4.1.1)(@types/node@24.10.2)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)
       '@types/node':
-        specifier: 24.10.1
-        version: 24.10.1
+        specifier: 24.10.2
+        version: 24.10.2
       ts-node:
         specifier: 10.9.2
-        version: 10.9.2(@types/node@24.10.1)(typescript@5.9.3)
+        version: 10.9.2(@types/node@24.10.2)(typescript@5.9.3)
       typescript:
         specifier: 5.9.3
         version: 5.9.3
       vitest:
         specifier: 4.0.15
-        version: 4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.1)
+        version: 4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.2)
       wrangler:
         specifier: 4.16.1
         version: 4.16.1(@cloudflare/workers-types@4.20251205.0)(bufferutil@4.0.9)(utf-8-validate@5.0.10)
@@ -1303,8 +1303,8 @@ packages:
   '@types/lodash@4.17.21':
     resolution: {integrity: sha512-FOvQ0YPD5NOfPgMzJihoT+Za5pdkDJWcbpuj1DjaKZIr/gxodQjY/uWEFlTNqW2ugXHUiL8lRQgw63dzKHZdeQ==}
 
-  '@types/node@24.10.1':
-    resolution: {integrity: sha512-GNWcUTRBgIRJD5zj+Tq0fKOJ5XZajIiBroOF0yvj2bSU1WvNdYS/dn9UxwsujGW4JX06dnHyjV2y9rRaybH0iQ==}
+  '@types/node@24.10.2':
+    resolution: {integrity: sha512-WOhQTZ4G8xZ1tjJTvKOpyEVSGgOTvJAfDK3FNFgELyaTpzhdgHVHeqW8V+UJvzF5BT+/B54T/1S2K6gd9c7bbA==}
 
   '@vercel/oidc@3.0.5':
     resolution: {integrity: sha512-fnYhv671l+eTTp48gB4zEsTW/YtRgRPnkI2nT7x6qw5rkI1Lq2hTmQIpHPgyThI0znLK+vX2n9XxKdXZ7BUbbw==}
@@ -2740,7 +2740,7 @@ snapshots:
     optionalDependencies:
       workerd: 1.20251011.0
 
-  '@cloudflare/vitest-pool-workers@0.10.3(@cloudflare/workers-types@4.20251205.0)(@vitest/runner@4.0.15)(@vitest/snapshot@4.0.15)(bufferutil@4.0.9)(utf-8-validate@5.0.10)(vitest@4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.1))':
+  '@cloudflare/vitest-pool-workers@0.10.3(@cloudflare/workers-types@4.20251205.0)(@vitest/runner@4.0.15)(@vitest/snapshot@4.0.15)(bufferutil@4.0.9)(utf-8-validate@5.0.10)(vitest@4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.2))':
     dependencies:
       '@vitest/runner': 4.0.15
       '@vitest/snapshot': 4.0.15
@@ -2749,7 +2749,7 @@ snapshots:
       devalue: 5.4.2
       miniflare: 4.20251011.1(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       semver: 7.7.3
-      vitest: 4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.1)
+      vitest: 4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.2)
       wrangler: 4.45.3(@cloudflare/workers-types@4.20251205.0)(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       zod: 3.25.76
     transitivePeerDependencies:
@@ -3114,7 +3114,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@modelcontextprotocol/inspector@0.17.5(@cfworker/json-schema@4.1.1)(@types/node@24.10.1)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)':
+  '@modelcontextprotocol/inspector@0.17.5(@cfworker/json-schema@4.1.1)(@types/node@24.10.2)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@modelcontextprotocol/inspector-cli': 0.17.5(@cfworker/json-schema@4.1.1)(zod@3.25.76)
       '@modelcontextprotocol/inspector-client': 0.17.5(@cfworker/json-schema@4.1.1)
@@ -3125,7 +3125,7 @@ snapshots:
       open: 10.2.0
       shell-quote: 1.8.3
       spawn-rx: 5.1.2
-      ts-node: 10.9.2(@types/node@24.10.1)(typescript@5.9.3)
+      ts-node: 10.9.2(@types/node@24.10.2)(typescript@5.9.3)
       zod: 3.25.76
     transitivePeerDependencies:
       - '@cfworker/json-schema'
@@ -3631,7 +3631,7 @@ snapshots:
 
   '@types/lodash@4.17.21': {}
 
-  '@types/node@24.10.1':
+  '@types/node@24.10.2':
     dependencies:
       undici-types: 7.16.0
 
@@ -3646,13 +3646,13 @@ snapshots:
       chai: 6.2.1
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.15(vite@7.2.6(@types/node@24.10.1))':
+  '@vitest/mocker@4.0.15(vite@7.2.6(@types/node@24.10.2))':
     dependencies:
       '@vitest/spy': 4.0.15
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.2.6(@types/node@24.10.1)
+      vite: 7.2.6(@types/node@24.10.2)
 
   '@vitest/pretty-format@4.0.15':
     dependencies:
@@ -4731,14 +4731,14 @@ snapshots:
 
   tree-kill@1.2.2: {}
 
-  ts-node@10.9.2(@types/node@24.10.1)(typescript@5.9.3):
+  ts-node@10.9.2(@types/node@24.10.2)(typescript@5.9.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.11
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.4
-      '@types/node': 24.10.1
+      '@types/node': 24.10.2
       acorn: 8.14.0
       acorn-walk: 8.3.2
       arg: 4.1.3
@@ -4829,7 +4829,7 @@ snapshots:
       - zod
     optional: true
 
-  vite@7.2.6(@types/node@24.10.1):
+  vite@7.2.6(@types/node@24.10.2):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.3)
@@ -4838,13 +4838,13 @@ snapshots:
       rollup: 4.53.3
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 24.10.1
+      '@types/node': 24.10.2
       fsevents: 2.3.3
 
-  vitest@4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.1):
+  vitest@4.0.15(@opentelemetry/api@1.9.0)(@types/node@24.10.2):
     dependencies:
       '@vitest/expect': 4.0.15
-      '@vitest/mocker': 4.0.15(vite@7.2.6(@types/node@24.10.1))
+      '@vitest/mocker': 4.0.15(vite@7.2.6(@types/node@24.10.2))
       '@vitest/pretty-format': 4.0.15
       '@vitest/runner': 4.0.15
       '@vitest/snapshot': 4.0.15
@@ -4861,11 +4861,11 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.2.6(@types/node@24.10.1)
+      vite: 7.2.6(@types/node@24.10.2)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@opentelemetry/api': 1.9.0
-      '@types/node': 24.10.1
+      '@types/node': 24.10.2
     transitivePeerDependencies:
       - jiti
       - less

@@ -40,7 +40,7 @@
     "@cloudflare/vitest-pool-workers": "0.10.3",
     "@cloudflare/workers-types": "4.20251205.0",
     "@modelcontextprotocol/inspector": "0.17.5",
-    "@types/node": "24.10.1",
+    "@types/node": "24.10.2",
     "ts-node": "10.9.2",
     "typescript": "5.9.3",
     "vitest": "4.0.15",
