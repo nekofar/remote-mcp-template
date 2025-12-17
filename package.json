@@ -39,7 +39,7 @@
     "@biomejs/biome": "2.3.8",
     "@cloudflare/vitest-pool-workers": "0.10.15",
     "@cloudflare/workers-types": "4.20251213.0",
-    "@modelcontextprotocol/inspector": "0.17.5",
+    "@modelcontextprotocol/inspector": "0.18.0",
     "@types/node": "25.0.2",
     "ts-node": "10.9.2",
     "typescript": "5.9.3",
