@@ -1,1 +1,4 @@
 saveExact: true
+
+overrides:
+  zod: ^4.2.1
