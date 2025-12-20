@@ -4,6 +4,9 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  zod: ^4.2.1
+
 importers:
 
   .:
@@ -18,7 +21,7 @@ importers:
         specifier: 4.11.1
         version: 4.11.1
       zod:
-        specifier: 4.2.1
+        specifier: ^4.2.1
         version: 4.2.1
     devDependencies:
       '@biomejs/biome':
@@ -55,19 +58,19 @@ packages:
     resolution: {integrity: sha512-qiIaVs1w1XcNiFG6cjhOwolPuMFSvy6ZxDeLaPlEK/kSmNGfd+gUA2CTpBPWWT3qN6Zxfdrwq+ti4BfkdmLIJQ==}
     engines: {node: '>=18'}
     peerDependencies:
-      zod: ^3.25.76 || ^4.1.8
+      zod: ^4.2.1
 
   '@ai-sdk/openai@2.0.73':
     resolution: {integrity: sha512-TOGoxkeJMgcxq80ZfyCAqKcfvGPgFsEQEK8SgI/w3He0fqi16KlnZVMexOlg8HOLumF6szweg/YrOmQixsPVGw==}
     engines: {node: '>=18'}
     peerDependencies:
-      zod: ^3.25.76 || ^4.1.8
+      zod: ^4.2.1
 
   '@ai-sdk/provider-utils@3.0.17':
     resolution: {integrity: sha512-TR3Gs4I3Tym4Ll+EPdzRdvo/rc8Js6c4nVhFLuvGLX/Y4V9ZcQMa/HTiYsHEgmYrf1zVi6Q145UEZUfleOwOjw==}
     engines: {node: '>=18'}
     peerDependencies:
-      zod: ^3.25.76 || ^4.1.8
+      zod: ^4.2.1
 
   '@ai-sdk/provider@2.0.0':
     resolution: {integrity: sha512-6o7Y2SeO9vFKB8lArHXehNuusnpddKPk7xqL7T2/b+OvXMRIXUO1rR4wcv1hAFUAT9avGZshty3Wlua/XA7TvA==}
@@ -871,7 +874,7 @@ packages:
     engines: {node: '>=18'}
     peerDependencies:
       '@cfworker/json-schema': ^4.1.1
-      zod: ^3.25 || ^4.0
+      zod: ^4.2.1
     peerDependenciesMeta:
       '@cfworker/json-schema':
         optional: true
@@ -1520,7 +1523,7 @@ packages:
     resolution: {integrity: sha512-TpaeKAzSFHQkUZ5cwkvGZCzElVDY0W7nJNT9Oq31R30PTmCtU8A5ll4IRm+CmolPSYbpXRHHPkgADxGyqex9eg==}
     engines: {node: '>=18'}
     peerDependencies:
-      zod: ^3.25.76 || ^4.1.8
+      zod: ^4.2.1
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
@@ -2760,44 +2763,38 @@ packages:
   zod-to-json-schema@3.25.0:
     resolution: {integrity: sha512-HvWtU2UG41LALjajJrML6uQejQhNJx+JBO9IflpSja4R03iNWfKXrj6W2h7ljuLyc1nKS+9yDyL/9tD1U/yBnQ==}
     peerDependencies:
-      zod: ^3.25 || ^4
+      zod: ^4.2.1
 
   zod-to-ts@2.0.0:
     resolution: {integrity: sha512-aHsUgIl+CQutKAxtRNeZslLCLXoeuSq+j5HU7q3kvi/c2KIAo6q4YjT7/lwFfACxLB923ELHYMkHmlxiqFy4lw==}
     peerDependencies:
       typescript: ^5.0.0
-      zod: ^3.25.0 || ^4.0.0
-
-  zod@3.22.3:
-    resolution: {integrity: sha512-EjIevzuJRiRPbVH4mGc8nApb/lVLKVpmUhAaR5R5doKGfAnGJ6Gr3CViAVjP+4FWSxCsybeWQdcgCtbX+7oZug==}
-
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+      zod: ^4.2.1
 
   zod@4.2.1:
     resolution: {integrity: sha512-0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==}
 
 snapshots:
 
-  '@ai-sdk/gateway@2.0.16(zod@3.25.76)':
+  '@ai-sdk/gateway@2.0.16(zod@4.2.1)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.17(zod@3.25.76)
+      '@ai-sdk/provider-utils': 3.0.17(zod@4.2.1)
       '@vercel/oidc': 3.0.5
-      zod: 3.25.76
+      zod: 4.2.1
 
-  '@ai-sdk/openai@2.0.73(zod@3.25.76)':
+  '@ai-sdk/openai@2.0.73(zod@4.2.1)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.17(zod@3.25.76)
-      zod: 3.25.76
+      '@ai-sdk/provider-utils': 3.0.17(zod@4.2.1)
+      zod: 4.2.1
 
-  '@ai-sdk/provider-utils@3.0.17(zod@3.25.76)':
+  '@ai-sdk/provider-utils@3.0.17(zod@4.2.1)':
     dependencies:
       '@ai-sdk/provider': 2.0.0
       '@standard-schema/spec': 1.1.0
       eventsource-parser: 3.0.6
-      zod: 3.25.76
+      zod: 4.2.1
 
   '@ai-sdk/provider@2.0.0':
     dependencies:
@@ -2884,7 +2881,7 @@ snapshots:
       semver: 7.7.3
       vitest: 3.2.4(@types/node@25.0.3)
       wrangler: 4.56.0(@cloudflare/workers-types@4.20251220.0)
-      zod: 3.25.76
+      zod: 4.2.1
     transitivePeerDependencies:
       - '@cloudflare/workers-types'
       - bufferutil
@@ -3271,9 +3268,9 @@ snapshots:
 
   '@jsdevtools/ono@7.1.3': {}
 
-  '@modelcontextprotocol/inspector-cli@0.18.0(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@3.25.76)':
+  '@modelcontextprotocol/inspector-cli@0.18.0(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@4.2.1)':
     dependencies:
-      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@3.25.76)
+      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@4.2.1)
       commander: 13.1.0
       spawn-rx: 5.1.2
     transitivePeerDependencies:
@@ -3284,7 +3281,7 @@ snapshots:
 
   '@modelcontextprotocol/inspector-client@0.18.0(@cfworker/json-schema@4.1.1)(hono@4.11.1)':
     dependencies:
-      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@3.25.76)
+      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@4.2.1)
       '@radix-ui/react-checkbox': 1.3.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-dialog': 1.1.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-icons': 1.3.2(react@18.3.1)
@@ -3308,7 +3305,7 @@ snapshots:
       react-simple-code-editor: 0.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       serve-handler: 6.1.6
       tailwind-merge: 2.6.0
-      zod: 3.25.76
+      zod: 4.2.1
     transitivePeerDependencies:
       - '@cfworker/json-schema'
       - '@types/react'
@@ -3318,13 +3315,13 @@ snapshots:
 
   '@modelcontextprotocol/inspector-server@0.18.0(@cfworker/json-schema@4.1.1)(hono@4.11.1)':
     dependencies:
-      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@3.25.76)
+      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@4.2.1)
       cors: 2.8.5
       express: 5.2.1
       shell-quote: 1.8.3
       spawn-rx: 5.1.2
       ws: 8.18.3
-      zod: 3.25.76
+      zod: 4.2.1
     transitivePeerDependencies:
       - '@cfworker/json-schema'
       - bufferutil
@@ -3334,17 +3331,17 @@ snapshots:
 
   '@modelcontextprotocol/inspector@0.18.0(@cfworker/json-schema@4.1.1)(@types/node@25.0.3)(hono@4.11.1)(typescript@5.9.3)':
     dependencies:
-      '@modelcontextprotocol/inspector-cli': 0.18.0(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@3.25.76)
+      '@modelcontextprotocol/inspector-cli': 0.18.0(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@4.2.1)
       '@modelcontextprotocol/inspector-client': 0.18.0(@cfworker/json-schema@4.1.1)(hono@4.11.1)
       '@modelcontextprotocol/inspector-server': 0.18.0(@cfworker/json-schema@4.1.1)(hono@4.11.1)
-      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@3.25.76)
+      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@4.2.1)
       concurrently: 9.2.1
       node-fetch: 3.3.2
       open: 10.2.0
       shell-quote: 1.8.3
       spawn-rx: 5.1.2
       ts-node: 10.9.2(@types/node@25.0.3)(typescript@5.9.3)
-      zod: 3.25.76
+      zod: 4.2.1
     transitivePeerDependencies:
       - '@cfworker/json-schema'
       - '@swc/core'
@@ -3357,30 +3354,6 @@ snapshots:
       - supports-color
       - typescript
       - utf-8-validate
-
-  '@modelcontextprotocol/sdk@1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@3.25.76)':
-    dependencies:
-      '@hono/node-server': 1.19.7(hono@4.11.1)
-      ajv: 8.17.1
-      ajv-formats: 3.0.1(ajv@8.17.1)
-      content-type: 1.0.5
-      cors: 2.8.5
-      cross-spawn: 7.0.6
-      eventsource: 3.0.7
-      eventsource-parser: 3.0.6
-      express: 5.2.1
-      express-rate-limit: 7.5.1(express@5.2.1)
-      jose: 6.1.3
-      json-schema-typed: 8.0.2
-      pkce-challenge: 5.0.1
-      raw-body: 3.0.2
-      zod: 3.25.76
-      zod-to-json-schema: 3.25.0(zod@3.25.76)
-    optionalDependencies:
-      '@cfworker/json-schema': 4.1.1
-    transitivePeerDependencies:
-      - hono
-      - supports-color
 
   '@modelcontextprotocol/sdk@1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@4.2.1)':
     dependencies:
@@ -3894,10 +3867,10 @@ snapshots:
 
   agents@0.2.32(@cloudflare/workers-types@4.20251220.0)(hono@4.11.1)(react@18.3.1)(typescript@5.9.3):
     dependencies:
-      '@ai-sdk/openai': 2.0.73(zod@3.25.76)
+      '@ai-sdk/openai': 2.0.73(zod@4.2.1)
       '@cfworker/json-schema': 4.1.1
-      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@3.25.76)
-      ai: 5.0.103(zod@3.25.76)
+      '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.1)(zod@4.2.1)
+      ai: 5.0.103(zod@4.2.1)
       cron-schedule: 6.0.0
       json-schema: 0.4.0
       json-schema-to-typescript: 15.0.4
@@ -3907,21 +3880,21 @@ snapshots:
       partysocket: 1.1.6
       react: 18.3.1
       yargs: 18.0.0
-      zod: 3.25.76
-      zod-to-ts: 2.0.0(typescript@5.9.3)(zod@3.25.76)
+      zod: 4.2.1
+      zod-to-ts: 2.0.0(typescript@5.9.3)(zod@4.2.1)
     transitivePeerDependencies:
       - '@cloudflare/workers-types'
       - hono
       - supports-color
       - typescript
 
-  ai@5.0.103(zod@3.25.76):
+  ai@5.0.103(zod@4.2.1):
     dependencies:
-      '@ai-sdk/gateway': 2.0.16(zod@3.25.76)
+      '@ai-sdk/gateway': 2.0.16(zod@4.2.1)
       '@ai-sdk/provider': 2.0.0
-      '@ai-sdk/provider-utils': 3.0.17(zod@3.25.76)
+      '@ai-sdk/provider-utils': 3.0.17(zod@4.2.1)
       '@opentelemetry/api': 1.9.0
-      zod: 3.25.76
+      zod: 4.2.1
 
   ajv-formats@3.0.1(ajv@8.17.1):
     optionalDependencies:
@@ -4539,7 +4512,7 @@ snapshots:
       workerd: 1.20250508.0
       ws: 8.18.0
       youch: 3.3.4
-      zod: 3.22.3
+      zod: 4.2.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -4557,7 +4530,7 @@ snapshots:
       workerd: 1.20251217.0
       ws: 8.18.0
       youch: 4.1.0-beta.10
-      zod: 3.22.3
+      zod: 4.2.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -5225,21 +5198,13 @@ snapshots:
       cookie: 1.1.1
       youch-core: 0.3.3
 
-  zod-to-json-schema@3.25.0(zod@3.25.76):
-    dependencies:
-      zod: 3.25.76
-
   zod-to-json-schema@3.25.0(zod@4.2.1):
     dependencies:
       zod: 4.2.1
 
-  zod-to-ts@2.0.0(typescript@5.9.3)(zod@3.25.76):
+  zod-to-ts@2.0.0(typescript@5.9.3)(zod@4.2.1):
     dependencies:
       typescript: 5.9.3
-      zod: 3.25.76
-
-  zod@3.22.3: {}
-
-  zod@3.25.76: {}
+      zod: 4.2.1
 
   zod@4.2.1: {}
