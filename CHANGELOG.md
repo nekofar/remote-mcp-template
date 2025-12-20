@@ -1,3 +1,8 @@
+## [1.0.0-alpha.19] - 2025-12-20
+
+### 🐛 Bug Fixes
+
+- Solve some minor issues and update dependencies
 ## [1.0.0-alpha.18] - 2025-12-18
 
 ### 🐛 Bug Fixes
