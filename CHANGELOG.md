@@ -1,3 +1,14 @@
+## [1.0.0-alpha.20] - 2025-12-20
+
+### 🚜 Refactor
+
+- *(src)* Simplify destructuring in async handlers
+- *(src)* Add explicit return types to async handlers
+
+### ⚙️ Miscellaneous Tasks
+
+- *(workflows)* Add type-checking step to build pipeline
+- *(scripts)* Add type-check to `lint` command
 ## [1.0.0-alpha.19] - 2025-12-20
 
 ### 🐛 Bug Fixes
