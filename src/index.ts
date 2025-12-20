@@ -28,9 +28,7 @@ export class MyMCP extends McpAgent<Bindings> {
           name: z.string().describe("The name of the person to greet"),
         },
       },
-      async (args: { name?: string }) => {
-        const name = args.name || "World";
-
+      async ({ name }) => {
         return {
           content: [
             {
@@ -80,9 +78,7 @@ export class MyMCP extends McpAgent<Bindings> {
           username: z.string().describe("The name of the user to greet."),
         },
       },
-      async (args: { username?: string }) => {
-        const username = args.username || "friend";
-
+      async ({ username }) => {
         return {
           messages: [
             {
