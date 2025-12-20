@@ -1,3 +1,12 @@
+## [1.0.0-alpha.21] - 2025-12-20
+
+### 🚜 Refactor
+
+- *(tsconfig)* Enable strict style options
+
+### ⚙️ Miscellaneous Tasks
+
+- *(scripts)* Update `build` script to use `pnpx`
 ## [1.0.0-alpha.20] - 2025-12-20
 
 ### 🚜 Refactor
