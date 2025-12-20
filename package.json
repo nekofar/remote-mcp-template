@@ -8,7 +8,7 @@
     "dev": "wrangler dev",
     "build": "wrangler deploy --dry-run",
     "format": "biome format --write",
-    "lint": "biome lint",
+    "lint": "biome lint && pnpm run type-check",
     "lint:fix": "biome lint --fix",
     "start": "wrangler dev",
     "test": "vitest --run",
