@@ -1,4 +1,9 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import type {
+  CallToolResult,
+  GetPromptResult,
+  ReadResourceResult,
+} from "@modelcontextprotocol/sdk/types.js";
 import { McpAgent } from "agents/mcp";
 import { Hono } from "hono";
 import { z } from "zod/v3";
@@ -28,9 +33,7 @@ export class MyMCP extends McpAgent<Bindings> {
           name: z.string().describe("The name of the person to greet"),
         },
       },
-      async (args: { name?: string }) => {
-        const name = args.name || "World";
-
+      async ({ name }): Promise<CallToolResult> => {
         return {
           content: [
             {
@@ -51,7 +54,7 @@ export class MyMCP extends McpAgent<Bindings> {
         description: "A static JSON resource with greeting data.",
         mimeType: "application/json",
       },
-      async () => ({
+      async (): Promise<ReadResourceResult> => ({
         contents: [
           {
             uri: "hello://greeting",
@@ -80,9 +83,7 @@ export class MyMCP extends McpAgent<Bindings> {
           username: z.string().describe("The name of the user to greet."),
         },
       },
-      async (args: { username?: string }) => {
-        const username = args.username || "friend";
-
+      async ({ username }): Promise<GetPromptResult> => {
         return {
           messages: [
             {
