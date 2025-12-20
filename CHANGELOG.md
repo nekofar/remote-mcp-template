@@ -1,3 +1,10 @@
+## [1.0.0-alpha.22] - 2025-12-20
+
+### ⚙️ Miscellaneous Tasks
+
+- *(dependabot)* Remove overrides for major updates
+- *(scripts)* Update `dev` script to use specific `wrangler` version
+- *(scripts)* Update `start` script to run `dev` script
 ## [1.0.0-alpha.21] - 2025-12-20
 
 ### 🚜 Refactor
