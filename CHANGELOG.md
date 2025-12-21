@@ -1,3 +1,8 @@
+## [1.0.0-alpha.23] - 2025-12-21
+
+### ⚙️ Miscellaneous Tasks
+
+- *(scripts)* Update `inspector` script to disable auto-open
 ## [1.0.0-alpha.22] - 2025-12-20
 
 ### ⚙️ Miscellaneous Tasks
