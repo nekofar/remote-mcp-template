@@ -1,11 +1,11 @@
 {
   "name": "remote-mcp-template",
-  "version": "1.0.0-alpha.24",
+  "version": "1.0.0-alpha.25",
   "description": "Template for a Model Context Protocol (MCP) server.",
   "type": "module",
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "pnpx wrangler@4.16.1 dev",
+    "dev": "pnpx wrangler@4.16.1 dev --port 8787",
     "build": "pnpx wrangler deploy --dry-run",
     "format": "biome format --write",
     "lint": "biome lint && pnpm run type-check",
@@ -14,7 +14,8 @@
     "test": "vitest --run",
     "cf-typegen": "wrangler types --include-runtime=false --strict-vars=false --env-interface CloudflareEnv ./cloudflare-env.d.ts",
     "type-check": "tsc --noEmit",
-    "inspector": "MCP_AUTO_OPEN_ENABLED=false mcp-inspector --transport sse --server-url http://127.0.0.1:8787/sse"
+    "inspector": "MCP_AUTO_OPEN_ENABLED=false mcp-inspector --transport sse --server-url http://localhost:8787/sse",
+    "tunnel": "ngrok http 8787"
   },
   "keywords": [
     "mcp",
