@@ -1,3 +1,10 @@
+## [1.0.0-alpha.25] - 2025-12-23
+
+### ⚙️ Miscellaneous Tasks
+
+- *(scripts)* Update `dev` script to specify custom port
+- *(scripts)* Update `inspector` script URL to `localhost`
+- *(scripts)* Add `tunnel` script for ngrok support
 ## [1.0.0-alpha.24] - 2025-12-23
 
 ### 🐛 Bug Fixes
