@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "deploy": "wrangler deploy",
-    "dev": "pnpx wrangler@4.16.1 dev",
+    "dev": "pnpx wrangler@4.16.1 dev --port 8787",
     "build": "pnpx wrangler deploy --dry-run",
     "format": "biome format --write",
     "lint": "biome lint && pnpm run type-check",
