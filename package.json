@@ -1,6 +1,6 @@
 {
   "name": "remote-mcp-template",
-  "version": "1.0.0-alpha.25",
+  "version": "1.0.0-alpha.26",
   "description": "Template for a Model Context Protocol (MCP) server.",
   "type": "module",
   "scripts": {
