@@ -1,6 +1,6 @@
 {
   "name": "remote-mcp-template",
-  "version": "1.0.0-alpha.27",
+  "version": "1.0.0-alpha.28",
   "description": "Template for a Model Context Protocol (MCP) server.",
   "type": "module",
   "scripts": {
@@ -27,7 +27,8 @@
   "license": "Apache-2.0",
   "private": true,
   "engines": {
-    "node": ">=20.6.0"
+    "node": "^24",
+    "pnpm": "^10"
   },
   "packageManager": "pnpm@10.26.1",
   "dependencies": {
