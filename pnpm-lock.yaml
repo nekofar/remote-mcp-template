@@ -17,8 +17,8 @@ importers:
         specifier: ^1.25.1
         version: 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.3)(zod@4.2.1)
       agents:
-        specifier: 0.3.0
-        version: 0.3.0(@cloudflare/workers-types@4.20251229.0)(ai@6.0.3(zod@4.2.1))(hono@4.11.3)(react@19.2.3)(typescript@5.9.3)(zod@4.2.1)
+        specifier: 0.3.3
+        version: 0.3.3(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20251229.0)(ai@6.0.3(zod@4.2.1))(hono@4.11.3)(react@19.2.3)(zod@4.2.1)
       ai:
         specifier: 6.0.3
         version: 6.0.3(zod@4.2.1)
@@ -142,6 +142,21 @@ packages:
 
   '@cfworker/json-schema@4.1.1':
     resolution: {integrity: sha512-gAmrUZSGtKc3AiBL71iNWxDsyUC5uMaKKGdvzYsBoTW/xi42JQHl7eKV2OYzCUqvc+D2RCcf7EXY2iCyFIk6og==}
+
+  '@cloudflare/ai-chat@0.0.3':
+    resolution: {integrity: sha512-io6MqDe42RgMaojdmV6x430rR2hSk2+lRTMD/fw03mLMbDexDh/+OUw3ibIX7FUIHojLb96Hn0Hb8g9WszD+Eg==}
+    peerDependencies:
+      agents: ^0.3.3
+      ai: ^6.0.0
+      react: ^19.0.0
+      zod: ^4.2.1
+
+  '@cloudflare/codemode@0.0.3':
+    resolution: {integrity: sha512-GeLuWauxi4v35puqqcsIlQwL7/9p3sELDURCgj1TOgEsVoMER5Kc298bviWz/6N81i6RcPf+x9vjdm9N411GWQ==}
+    peerDependencies:
+      agents: ^0.3.3
+      ai: ^6.0.0
+      zod: ^4.2.1
 
   '@cloudflare/kv-asset-handler@0.4.1':
     resolution: {integrity: sha512-Nu8ahitGFFJztxUml9oD/DLb7Z28C8cd8F46IVQ7y5Btz575pvMY8AqZsXkX7Gds29eCKdMgIHjIvzskHgPSFg==}
@@ -1308,12 +1323,14 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
-  agents@0.3.0:
-    resolution: {integrity: sha512-UwhTWs6YPrhHTfV6vvEkYlJnC643nwpCSOvoUmyabWbZvUiHuIvhhAMclmsSh9J0GYQSpg7rKb1tCId2xumvbQ==}
+  agents@0.3.3:
+    resolution: {integrity: sha512-rz/ouvEjaPWghJ/lfp0IBNUq0zn/Q/t8jP6p9T0Hny0wCqNHlZzwS3XKRrH56kmZqAZCxRnuOw6Tvy7FWhQmVw==}
     hasBin: true
     peerDependencies:
       '@ai-sdk/openai': ^3.0.0
       '@ai-sdk/react': ^3.0.0
+      '@cloudflare/ai-chat': ^0.0.3
+      '@cloudflare/codemode': ^0.0.3
       ai: ^6.0.0
       react: ^19.0.0
       viem: '>=2.0.0'
@@ -1323,8 +1340,6 @@ packages:
       '@ai-sdk/openai':
         optional: true
       '@ai-sdk/react':
-        optional: true
-      ai:
         optional: true
       viem:
         optional: true
@@ -2586,6 +2601,22 @@ snapshots:
 
   '@cfworker/json-schema@4.1.1': {}
 
+  '@cloudflare/ai-chat@0.0.3(agents@0.3.3)(ai@6.0.3(zod@4.2.1))(react@19.2.3)(zod@4.2.1)':
+    dependencies:
+      agents: 0.3.3(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20251229.0)(ai@6.0.3(zod@4.2.1))(hono@4.11.3)(react@19.2.3)(zod@4.2.1)
+      ai: 6.0.3(zod@4.2.1)
+      react: 19.2.3
+      zod: 4.2.1
+
+  '@cloudflare/codemode@0.0.3(agents@0.3.3)(ai@6.0.3(zod@4.2.1))(typescript@5.9.3)(zod@4.2.1)':
+    dependencies:
+      agents: 0.3.3(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20251229.0)(ai@6.0.3(zod@4.2.1))(hono@4.11.3)(react@19.2.3)(zod@4.2.1)
+      ai: 6.0.3(zod@4.2.1)
+      zod: 4.2.1
+      zod-to-ts: 2.0.0(typescript@5.9.3)(zod@4.2.1)
+    transitivePeerDependencies:
+      - typescript
+
   '@cloudflare/kv-asset-handler@0.4.1':
     dependencies:
       mime: 3.0.0
@@ -3500,10 +3531,13 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  agents@0.3.0(@cloudflare/workers-types@4.20251229.0)(ai@6.0.3(zod@4.2.1))(hono@4.11.3)(react@19.2.3)(typescript@5.9.3)(zod@4.2.1):
+  agents@0.3.3(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20251229.0)(ai@6.0.3(zod@4.2.1))(hono@4.11.3)(react@19.2.3)(zod@4.2.1):
     dependencies:
       '@cfworker/json-schema': 4.1.1
+      '@cloudflare/ai-chat': 0.0.3(agents@0.3.3)(ai@6.0.3(zod@4.2.1))(react@19.2.3)(zod@4.2.1)
+      '@cloudflare/codemode': 0.0.3(agents@0.3.3)(ai@6.0.3(zod@4.2.1))(typescript@5.9.3)(zod@4.2.1)
       '@modelcontextprotocol/sdk': 1.25.1(@cfworker/json-schema@4.1.1)(hono@4.11.3)(zod@4.2.1)
+      ai: 6.0.3(zod@4.2.1)
       cron-schedule: 6.0.0
       json-schema: 0.4.0
       json-schema-to-typescript: 15.0.4
@@ -3514,14 +3548,10 @@ snapshots:
       react: 19.2.3
       yargs: 18.0.0
       zod: 4.2.1
-      zod-to-ts: 2.0.0(typescript@5.9.3)(zod@4.2.1)
-    optionalDependencies:
-      ai: 6.0.3(zod@4.2.1)
     transitivePeerDependencies:
       - '@cloudflare/workers-types'
       - hono
       - supports-color
-      - typescript
 
   ai@6.0.3(zod@4.2.1):
     dependencies:
