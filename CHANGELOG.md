@@ -1,3 +1,8 @@
+## [1.0.0-alpha.30] - 2026-01-05
+
+### 🐛 Bug Fixes
+
+- Solve some minor issues and update dependencies
 ## [1.0.0-alpha.29] - 2026-01-04
 
 ### 🐛 Bug Fixes
