@@ -1,6 +1,6 @@
 {
   "name": "remote-mcp-template",
-  "version": "1.0.0-alpha.35",
+  "version": "1.0.0-alpha.36",
   "description": "Template for a Model Context Protocol (MCP) server.",
   "type": "module",
   "scripts": {
@@ -30,7 +30,7 @@
     "node": "^24",
     "pnpm": "^10"
   },
-  "packageManager": "pnpm@10.27.0",
+  "packageManager": "pnpm@10.28.2",
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.25.3",
     "agents": "0.3.6",
