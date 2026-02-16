@@ -34,7 +34,7 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.25.3",
     "agents": "0.3.6",
-    "ai": "6.0.64",
+    "ai": "6.0.86",
     "hono": "4.11.7",
     "zod": "4.3.6"
   },
