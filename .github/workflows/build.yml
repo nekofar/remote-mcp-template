@@ -64,7 +64,7 @@ jobs:
           run_install: false
 
       - name: Setup Node.js ${{ matrix.node-version }} Environment
-        uses: actions/setup-node@v6.1.0 # Action for setting up Node environment.
+        uses: actions/setup-node@v6.2.0 # Action for setting up Node environment.
         with:
           cache: 'pnpm'
           node-version: ${{ matrix.node-version }}
@@ -107,7 +107,7 @@ jobs:
 
       # Generate a changelog for the new release using Git
       - name: Generate a changelog
-        uses: orhun/git-cliff-action@v4.7.0
+        uses: orhun/git-cliff-action@v4.8.0
         id: git-cliff
         with:
           config: cliff.toml # The configuration file for git-cliff
