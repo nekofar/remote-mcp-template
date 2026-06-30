@@ -18,10 +18,10 @@ importers:
         version: 1.25.3(@cfworker/json-schema@4.1.1)(hono@4.11.7)(zod@4.4.1)
       agents:
         specifier: 0.3.6
-        version: 0.3.6(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20260131.0)(ai@6.0.214(zod@4.4.1))(hono@4.11.7)(react@19.2.3)(zod@4.4.1)
+        version: 0.3.6(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20260131.0)(ai@6.0.216(zod@4.4.1))(hono@4.11.7)(react@19.2.3)(zod@4.4.1)
       ai:
-        specifier: 6.0.214
-        version: 6.0.214(zod@4.4.1)
+        specifier: 6.0.216
+        version: 6.0.216(zod@4.4.1)
       hono:
         specifier: 4.11.7
         version: 4.11.7
@@ -59,8 +59,8 @@ importers:
 
 packages:
 
-  '@ai-sdk/gateway@3.0.139':
-    resolution: {integrity: sha512-RFpxyh5j9g7ZMfKxhiwCcF7bGU872o3JvoiIqZbHOM4qkR4RCzeKJF+k+zHomcJYGeUabEbeMXTKNASzz4Toxw==}
+  '@ai-sdk/gateway@3.0.140':
+    resolution: {integrity: sha512-4VyQTHHqfZ0qI1fCcurJgYgzVDgLfV4svzBMOHGGxCu4srFkAn4ZmwFj2M0J00kNt7QLsjOtZ6PhueupeIJSjA==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^4.2.1
@@ -1447,8 +1447,8 @@ packages:
       x402:
         optional: true
 
-  ai@6.0.214:
-    resolution: {integrity: sha512-9MlePEXT5pXtQv4fXqmiR0RG3DZU4Dbv+kU9ktEJC2COi2RH2WvI2GiyG9MuCqgPII6f1w+5kB5fNIiArqPzaQ==}
+  ai@6.0.216:
+    resolution: {integrity: sha512-K6/H1H6b+IJuz79Nc44A/tEPzAH+dUCmQhHtP2In943OxvLekosVYBwUUsr1oQjc/JvN8WRpL1mLuefUBHxs/w==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^4.2.1
@@ -2623,7 +2623,7 @@ packages:
 
 snapshots:
 
-  '@ai-sdk/gateway@3.0.139(zod@4.4.1)':
+  '@ai-sdk/gateway@3.0.140(zod@4.4.1)':
     dependencies:
       '@ai-sdk/provider': 3.0.12
       '@ai-sdk/provider-utils': 4.0.33(zod@4.4.1)
@@ -2690,17 +2690,17 @@ snapshots:
 
   '@cfworker/json-schema@4.1.1': {}
 
-  '@cloudflare/ai-chat@0.0.3(agents@0.3.6)(ai@6.0.214(zod@4.4.1))(react@19.2.3)(zod@4.4.1)':
+  '@cloudflare/ai-chat@0.0.3(agents@0.3.6)(ai@6.0.216(zod@4.4.1))(react@19.2.3)(zod@4.4.1)':
     dependencies:
-      agents: 0.3.6(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20260131.0)(ai@6.0.214(zod@4.4.1))(hono@4.11.7)(react@19.2.3)(zod@4.4.1)
-      ai: 6.0.214(zod@4.4.1)
+      agents: 0.3.6(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20260131.0)(ai@6.0.216(zod@4.4.1))(hono@4.11.7)(react@19.2.3)(zod@4.4.1)
+      ai: 6.0.216(zod@4.4.1)
       react: 19.2.3
       zod: 4.4.1
 
-  '@cloudflare/codemode@0.0.3(agents@0.3.6)(ai@6.0.214(zod@4.4.1))(typescript@5.9.3)(zod@4.4.1)':
+  '@cloudflare/codemode@0.0.3(agents@0.3.6)(ai@6.0.216(zod@4.4.1))(typescript@5.9.3)(zod@4.4.1)':
     dependencies:
-      agents: 0.3.6(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20260131.0)(ai@6.0.214(zod@4.4.1))(hono@4.11.7)(react@19.2.3)(zod@4.4.1)
-      ai: 6.0.214(zod@4.4.1)
+      agents: 0.3.6(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20260131.0)(ai@6.0.216(zod@4.4.1))(hono@4.11.7)(react@19.2.3)(zod@4.4.1)
+      ai: 6.0.216(zod@4.4.1)
       zod: 4.4.1
       zod-to-ts: 2.1.0(typescript@5.9.3)(zod@4.4.1)
     transitivePeerDependencies:
@@ -3662,13 +3662,13 @@ snapshots:
 
   acorn@8.15.0: {}
 
-  agents@0.3.6(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20260131.0)(ai@6.0.214(zod@4.4.1))(hono@4.11.7)(react@19.2.3)(zod@4.4.1):
+  agents@0.3.6(@cloudflare/ai-chat@0.0.3)(@cloudflare/codemode@0.0.3)(@cloudflare/workers-types@4.20260131.0)(ai@6.0.216(zod@4.4.1))(hono@4.11.7)(react@19.2.3)(zod@4.4.1):
     dependencies:
       '@cfworker/json-schema': 4.1.1
-      '@cloudflare/ai-chat': 0.0.3(agents@0.3.6)(ai@6.0.214(zod@4.4.1))(react@19.2.3)(zod@4.4.1)
-      '@cloudflare/codemode': 0.0.3(agents@0.3.6)(ai@6.0.214(zod@4.4.1))(typescript@5.9.3)(zod@4.4.1)
+      '@cloudflare/ai-chat': 0.0.3(agents@0.3.6)(ai@6.0.216(zod@4.4.1))(react@19.2.3)(zod@4.4.1)
+      '@cloudflare/codemode': 0.0.3(agents@0.3.6)(ai@6.0.216(zod@4.4.1))(typescript@5.9.3)(zod@4.4.1)
       '@modelcontextprotocol/sdk': 1.25.3(@cfworker/json-schema@4.1.1)(hono@4.11.7)(zod@4.4.1)
-      ai: 6.0.214(zod@4.4.1)
+      ai: 6.0.216(zod@4.4.1)
       cron-schedule: 6.0.0
       json-schema: 0.4.0
       json-schema-to-typescript: 15.0.4
@@ -3684,9 +3684,9 @@ snapshots:
       - hono
       - supports-color
 
-  ai@6.0.214(zod@4.4.1):
+  ai@6.0.216(zod@4.4.1):
     dependencies:
-      '@ai-sdk/gateway': 3.0.139(zod@4.4.1)
+      '@ai-sdk/gateway': 3.0.140(zod@4.4.1)
       '@ai-sdk/provider': 3.0.12
       '@ai-sdk/provider-utils': 4.0.33(zod@4.4.1)
       '@opentelemetry/api': 1.9.1
